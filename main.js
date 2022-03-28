@@ -57,6 +57,10 @@ document.write('HELLO')
 // undefined
 // let u1;
 
+// Sequence
+// array
+let arr1 = [1,2,3,4,5]
+
 // sayHii()
 // say()
 
@@ -169,3 +173,100 @@ const sayHii = () => {
 
 // >>>
 // -2   =   0111110
+
+
+// Control Statement
+
+// Condition
+// if
+// else if
+// else
+
+// const checkVote = (age) => {
+
+//     if (age >= 18){
+//         console.log('You can vote');
+//     } else {
+//         console.log('You can\'t vote');
+//     }
+
+// }
+
+// function checkGrade(totalNumber){
+//     let precent = totalNumber/5
+//     console.log(`${precent}%`);
+//     let grade;
+//     if (precent >= 95) {
+//         grade = 'A+'
+//     }else if(precent >= 80) {
+//         grade = 'A'
+//     } else if (precent >= 65) {
+//         grade = 'B'
+//     } else if (precent>= 40) {
+//         grade = 'C'
+//     } else {
+//         console.log('You Faield');
+//         grade = 'D'
+//     }
+//     console.log(`Grade ${grade}`);
+// }
+
+// Loop
+// while
+// let n = 5000
+
+// while (n <= 10) { // false
+//     console.log(n);
+//     n++ // 11
+// }
+
+// // do while
+// do {
+//     console.log(n);
+//     n++ // 11
+// } while (n<=10);
+
+// for
+// for (let n = 0; n<=10; n++) {
+//     console.log(n);
+// }
+
+// let print = (element) => {
+//     console.log(element);
+// }
+
+// arr1 = [1,2,3,4,5]
+// foreach
+// arr1.forEach(print)
+
+
+// let btn111 = document.getElementById('btn')
+// let input = document.getElementById('inp')
+
+// btn111.addEventListener('click', ()=> {
+//     console.log(input.value);
+// })
+
+let screen = document.getElementById('screen')
+let inp = document.getElementById('inp')
+let btn = document.getElementById('btn')
+
+function updateScreen(value) {
+    screen.innerText = value
+}
+
+// const updateScreen = (value)=>{
+//     screen.innerText = value
+// }
+
+
+let n = 1;
+btn.addEventListener('mousemove', ()=>{
+    updateScreen('Mouse Moved ' + n + ' Times');
+    n++
+})
+
+// btn.addEventListener('mouseout', ()=>{
+//     console.log('out' + n);
+//     n++
+// })
