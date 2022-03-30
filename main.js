@@ -248,6 +248,7 @@ const sayHii = () => {
 // })
 
 let screen = document.getElementById('screen')
+let form = document.getElementsByTagName('form')[0]
 let inp = document.getElementById('inp')
 let btn = document.getElementById('btn')
 
@@ -261,12 +262,54 @@ function updateScreen(value) {
 
 
 let n = 1;
-btn.addEventListener('mousemove', ()=>{
-    updateScreen('Mouse Moved ' + n + ' Times');
-    n++
-})
+// btn.addEventListener('mousemove', ()=>{
+//     updateScreen('Mouse Moved ' + n + ' Times');
+//     n++
+// })
 
 // btn.addEventListener('mouseout', ()=>{
 //     console.log('out' + n);
 //     n++
 // })
+
+// btn.addEventListener('mousedown', ()=> console.log('Mouse Down'))
+
+// btn.addEventListener('mouseup', ()=> console.log('Mouse UP'))
+
+// inp.addEventListener('keydown', ()=>{
+//     console.log('KEY DOWN');
+// })
+
+// inp.addEventListener('keyup', ()=>{
+//     console.log('KEY UP');
+// })
+
+// inp.addEventListener('keyup', ()=>{
+//     screen.innerText = inp.value
+// })
+
+// inp.addEventListener('select', (e)=>{
+//     console.log('Selected..');
+// })
+
+// form.addEventListener('submit', (e)=>{
+//     e.preventDefault()
+//     console.log('Success..');
+// })
+
+// inp.addEventListener('invalid', (e)=>{
+//     alert('Invalid..')
+//     e.preventDefault()
+// })
+
+// inp.addEventListener('focus', (e)=>{
+//     console.log('Start Typing..');
+// })
+
+// inp.addEventListener('blur', (e)=>{
+//     console.log('Submit now..');
+// })
+
+inp.addEventListener('change', (e)=>{
+    console.log(inp.value);
+})
