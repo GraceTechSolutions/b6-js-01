@@ -261,7 +261,7 @@ function updateScreen(value) {
 // }
 
 
-let n = 1;
+// let n = 1;
 // btn.addEventListener('mousemove', ()=>{
 //     updateScreen('Mouse Moved ' + n + ' Times');
 //     n++
@@ -310,6 +310,36 @@ let n = 1;
 //     console.log('Submit now..');
 // })
 
-inp.addEventListener('change', (e)=>{
-    console.log(inp.value);
-})
+// inp.addEventListener('change', (e)=>{
+//     console.log(inp.value);
+// })
+
+// Object
+// let student = {
+//     firetName: 'Jay',
+//     lastName: 'Singh',
+//     totalMarks: 580,
+//     calcGrade: function() {
+//         let avgMarks = this.totalMarks/6
+//         if (avgMarks>90) {
+//             return 'A+'
+//         } else if (avgMarks>80) {
+//             return 'A'
+//         } else if(avgMarks>70) {
+//             return 'B'
+//         } else if(avgMarks>60) {
+//             return 'C'
+//         } else {
+//             return 'D'
+//         }
+//     }
+// }
+
+// let car = new Object()
+
+// car.name = 'Swift'
+// car.price = 6000000
+// car.model = 'LXI'
+// car.addDiscount = function(){
+//     return (this.price/100)*2
+// }
